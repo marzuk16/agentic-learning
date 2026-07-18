@@ -1,0 +1,31 @@
+[project]
+name = "agentic-learning"
+version = "0.1.0"
+description = "Production Agentic AI Engineering Platform"
+requires-python = ">=3.12"
+
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "langchain",
+    "langgraph",
+    "sqlalchemy",
+    "psycopg[binary]",
+    "pgvector",
+    "redis",
+    "pydantic",
+    "pydantic-settings",
+    "python-dotenv"
+]
+
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "ruff",
+    "mypy"
+]
+
+
+[tool.setuptools.packages.find]
+where = ["src"]
