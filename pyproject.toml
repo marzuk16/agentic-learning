@@ -5,17 +5,32 @@ description = "Production Agentic AI Engineering Platform"
 requires-python = ">=3.12"
 
 dependencies = [
-    "fastapi",
-    "uvicorn[standard]",
+    # LLM Clients & Tokenization
+    "openai>=2.46.0",
+    "tiktoken>=0.13.0", # token count
+
+    # Local LLM (Apple Silicon)
+    "mlx>=0.32.0",
+    "mlx-lm>=0.31.3",
+
+    # AI Frameworks
     "langchain",
     "langgraph",
+
+    # Web API
+    "fastapi",
+    "uvicorn[standard]",
+
+    # Database
     "sqlalchemy",
     "psycopg[binary]",
     "pgvector",
     "redis",
+
+    # Configuration & Validation
     "pydantic",
     "pydantic-settings",
-    "python-dotenv"
+    "python-dotenv",
 ]
 
 
