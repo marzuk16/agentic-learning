@@ -75,6 +75,7 @@ Deliverable:
 
 ### Day 4
 
+- Reasoning
 - FastAPI
 
 ``POST /chat``
