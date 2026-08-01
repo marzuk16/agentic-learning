@@ -36,6 +36,37 @@ Explain Docker layer caching.
 ### Day 4
 - pgvector
 
+```md
+agentic
+│
+├── public
+│   ├── users
+│   ├── conversations
+│   ├── messages
+│   └── api_keys
+│
+├── rag
+│   ├── documents
+│   ├── chunks
+│   ├── embeddings
+│   └── collections
+│
+├── memory
+│   ├── short_term
+│   ├── long_term
+│   └── summaries
+│
+├── agent
+│   ├── runs
+│   ├── checkpoints
+│   ├── tool_calls
+│   └── states
+│
+└── audit
+    ├── logs
+    └── events
+```
+
 ### Day 5
 - PDF Ingestion
 

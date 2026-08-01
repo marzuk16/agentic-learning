@@ -5,42 +5,58 @@ description = "Production Agentic AI Engineering Platform"
 requires-python = ">=3.12"
 
 dependencies = [
-    # LLM Clients & Tokenization
-    "openai>=2.46.0",
-    "tiktoken>=0.13.0", # token count
+    # Common
+    "pydantic",
+    "pydantic-settings",
+    "python-dotenv",
+    "sentence-transformers>=5.6.1",
+]
 
-    # Local LLM (Apple Silicon)
+[dependency-groups]
+
+# Local LLM & Prompt Engineering
+llm = [
+    "openai>=2.46.0",
     "mlx>=0.32.0",
     "mlx-lm>=0.31.3",
+    "tiktoken>=0.13.0",
+]
 
-    # AI Frameworks
+# RAG & Agent Framework
+ai = [
     "langchain",
     "langgraph",
+]
 
-    # Web API
+# REST API
+api = [
     "fastapi",
     "uvicorn[standard]",
+    "python-multipart",
+]
 
-    # Database
+# Database
+database = [
     "sqlalchemy",
     "psycopg[binary]",
     "pgvector",
     "redis",
-
-    # Configuration & Validation
-    "pydantic",
-    "pydantic-settings",
-    "python-dotenv",
 ]
 
+# PDF / Document Processing
+ingestion = [
+    "pymupdf",
+]
 
-[dependency-groups]
+# Embedding Models
+embedding = [
+    "sentence-transformers",
+]
+
+# Development
 dev = [
     "pytest",
     "ruff",
-    "mypy"
+    "mypy",
+    "sqlparse",
 ]
-
-
-[tool.setuptools.packages.find]
-where = ["src"]
