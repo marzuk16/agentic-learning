@@ -1,13 +1,14 @@
 import tempfile
 from pathlib import Path
 
-from fastapi import APIRouter, Depends, File, UploadFile
+from fastapi import APIRouter, Depends, File, HTTPException, UploadFile
 from sqlalchemy.orm import Session
 
 from src.app.dependencies import (
     get_db,
     get_embedding_service,
 )
+from src.common.exceptions import EmptyDocumentError
 from src.rag.chunking.semantic import SemanticChunker
 from src.rag.embeddings.base import EmbeddingService
 from src.rag.ingestion.loaders.pdf import PDFLoader
@@ -44,6 +45,11 @@ async def upload_document(
 
     try:
         document = service.ingest_pdf(tmp_path)
+    except EmptyDocumentError as error:
+        raise HTTPException(
+            status_code=422,
+            detail=str(error),
+        ) from error
     finally:
         tmp_path.unlink(missing_ok=True)
         tmp_dir.rmdir()

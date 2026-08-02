@@ -12,6 +12,11 @@ dependencies = [
     "sentence-transformers>=5.6.1",
 ]
 
+[tool.uv]
+# Install every dependency group by default, so a bare `uv run`/`uv sync`
+# doesn't prune the api/database/llm/ingestion packages out of .venv.
+default-groups = "all"
+
 [dependency-groups]
 
 # Local LLM & Prompt Engineering

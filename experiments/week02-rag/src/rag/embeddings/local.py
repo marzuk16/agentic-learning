@@ -29,7 +29,7 @@ class LocalEmbeddingService(EmbeddingService):
         )
 
         self.dimension = (
-            self.model.get_sentence_embedding_dimension()
+            self.model.get_embedding_dimension()
         )
 
         if self.dimension != expected:

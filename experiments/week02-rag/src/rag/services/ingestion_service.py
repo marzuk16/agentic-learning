@@ -2,6 +2,7 @@ from pathlib import Path
 
 from sqlalchemy.orm import Session
 
+from src.common.exceptions import EmptyDocumentError
 from src.rag.chunking.base import Chunker
 from src.db.models.chunk import Chunk
 from src.db.models.document import Document
@@ -59,6 +60,15 @@ class IngestionService:
                     loaded_document
                 )
             )
+
+
+            # A document with no chunks is unsearchable, so committing it
+            # would be a silent failure. Raise before embedding so the
+            # transaction rolls the document row back too.
+            if not chunks:
+                raise EmptyDocumentError(
+                    loaded_document.title
+                )
 
 
             embeddings = (
