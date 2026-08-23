@@ -163,3 +163,228 @@ Performance ও scalability নিয়ে পরামর্শ দেব
 পরের week's task দেব
 
 এভাবে ১২ সপ্তাহ শেষে তোমার হাতে শুধু শেখা নয়, একটি interview-ready portfolioও থাকবে।
+
+
+
+# Agentic AI Engineering
+
+## 1. Python for AI Applications
+
+* Project Structure
+* Dependency Management (uv)
+* Type Hints
+* OOP & Design Patterns
+* Async / Await
+* Configuration Management
+* Error Handling
+* Logging
+* Testing
+
+## 2. LLM Fundamentals
+
+* Tokens & Context Window
+* Prompt Engineering
+* Structured Output
+* Streaming
+* Local LLM Inference
+* Model Parameters
+* Token Management
+
+## 3. AI Backend Development
+
+* FastAPI
+* REST API
+* Dependency Injection
+* Lifespan
+* Async API
+* Streaming Response
+* API Authentication
+* API Versioning
+
+## 4. Database & Storage
+
+* PostgreSQL
+* SQLAlchemy ORM
+* Transactions
+* Repository Pattern
+* JSONB
+* Database Indexing
+* Redis
+* Caching
+* Session State
+
+## 5. Vector Search & RAG
+
+* Embeddings
+* pgvector
+* Document Ingestion
+* Code Ingestion
+* Chunking
+* Metadata
+* Vector Search
+* Semantic Search
+* Hybrid Search
+* Reranking
+* Context Construction
+* RAG Evaluation
+
+## 6. Repository Intelligence
+
+* Repository Indexing
+* File Traversal
+* File Filtering
+* Language Detection
+* Code Parsing
+* AST
+* Symbol Extraction
+* Code Chunking
+* Dependency Analysis
+* Incremental Indexing
+
+## 7. Tool Calling
+
+* Tool Definition
+* Tool Schema
+* Function Calling
+* Tool Selection
+* Tool Execution
+* Tool Results
+* Tool Validation
+* Tool Error Handling
+* Tool Permissions
+
+## 8. Agent Workflow
+
+* Agent State
+* State Management
+* Agent Loop
+* Planning
+* Task Decomposition
+* Sequential Workflow
+* Parallel Workflow
+* Conditional Workflow
+* Retry
+* Failure Recovery
+
+## 9. MCP
+
+* Model Context Protocol
+* MCP Client
+* MCP Server
+* MCP Tools
+* MCP Resources
+* MCP Prompts
+* Tool Integration
+
+## 10. Multi-Agent Systems
+
+* Planner Agent
+* Repository Agent
+* Kubernetes Agent
+* Documentation Agent
+* Reviewer Agent
+* Agent Communication
+* Agent Delegation
+* Agent Coordination
+* Parallel Agents
+* Multi-Agent Orchestration
+
+## 11. Agent Memory
+
+* Short-Term Memory
+* Working Memory
+* Long-Term Memory
+* Conversation Memory
+* Retrieval Memory
+* Memory Storage
+* Memory Retrieval
+
+## 12. AI Code Assistant
+
+* Code Search
+* Semantic Code Search
+* Code Understanding
+* Definition Search
+* Reference Search
+* Dependency Analysis
+* Code Review
+* Bug Detection
+* Refactoring Suggestions
+
+## 13. Kubernetes Intelligence
+
+* Manifest Analysis
+* Deployment Review
+* Service Review
+* Ingress Review
+* Resource Review
+* Security Review
+* Configuration Review
+* Kubernetes Best Practices
+
+## 14. Documentation Generation
+
+* README Generation
+* API Documentation
+* Architecture Documentation
+* Code Documentation
+* Deployment Documentation
+
+## 15. AI Evaluation
+
+* Retrieval Evaluation
+* Agent Evaluation
+* Tool Selection Evaluation
+* Answer Evaluation
+* Hallucination Detection
+* Task Success Rate
+* Evaluation Dataset
+
+## 16. Observability
+
+* Logging
+* Metrics
+* Distributed Tracing
+* LLM Tracing
+* Agent Tracing
+* Tool Tracing
+* Token Usage
+* Latency Monitoring
+* OpenTelemetry
+
+## 17. Guardrails & Security
+
+* Input Validation
+* Output Validation
+* Prompt Injection
+* Tool Permissions
+* Authentication
+* Authorization
+* Rate Limiting
+* Secrets Management
+* Sandbox Execution
+
+## 18. Deployment
+
+* Docker
+* Docker Compose
+* Containerization
+* Kubernetes
+* ConfigMap
+* Secrets
+* Health Checks
+* Resource Limits
+* HPA
+* Rolling Deployment
+
+## 19. Production AI System
+
+* Scalability
+* Reliability
+* Fault Tolerance
+* Async Processing
+* Background Jobs
+* Caching
+* Cost Optimization
+* Model Management
+* AI System Architecture

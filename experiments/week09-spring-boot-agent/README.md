@@ -1,4 +1,0 @@
-- Controller → Service → Repository flow explain করবে
-- Bean dependency visualize করবে
-- REST endpoint summary তৈরি করবে
-- Configuration issue detect করবে
